@@ -1,0 +1,115 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #2e3c88;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Grid Layout */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 20px;
+  padding: 2rem;
+  background: #eef1f7;
+}
+
+.content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.main-content {
+  background-color: #ffffff;
+}
+
+.sidebar {
+  background-color: #e3f2fd; /* light blue */
+}
+
+.extras {
+  background-color: #f1f8e9; /* light green */
+}
+
+h2, h3 {
+  color: #2e3c88;
+  margin-bottom: 0.5rem;
+}
+
+ul {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+blockquote {
+  font-style: italic;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  border-left: 4px solid #2e3c88;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2e3c88;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
